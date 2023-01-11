@@ -1,0 +1,213 @@
+/* MODIF GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3,
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 0px 0;
+  color: rgb(240, 208, 26);
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px 0 0 0;
+  color: white;
+}
+
+header li a {
+  text-decoration: none;
+  color: rgb(240, 208, 26);
+}
+
+header li {
+  list-style-type: none;
+  padding-left: 2em;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(66, 66, 215);
+}
+
+header nav ul {
+  display: flex;
+}
+
+div.main {
+  background-color: rgb(25, 25, 150);
+  display: flex;
+  padding: 30px;
+}
+/* FIN MODIF GENERAL */
+
+/* BLOC gauche */
+.container-left {
+  background-color: rgb(66, 66, 215);
+  width: 30%;
+  max-width: 292px; /*  fixe la taille qui bouge quand je diminue la taille des graphiques (test) */
+}
+
+.container-left > div {
+  /* modif des marges intérieures des div enfant de div container-left */
+  padding: 15px 20px;
+}
+
+.container-left h1,
+h2 {
+  color: rgb(66, 66, 215);
+}
+
+.bloc-left1 {
+  background-color: rgb(240, 208, 26);
+}
+
+.bloc-left1 .logo-cv {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.bloc-left3 a {
+  color: white;
+  text-decoration: none;
+}
+.bloc-left3 > div {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bloc-left3 .icones {
+  width: 30px;
+  height: 30px;
+}
+
+.bloc-left3 p {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.bloc-left4 > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.bloc-left4 img {
+  width: 80px;
+  margin: 20px;
+}
+/* Fin bloc gauche*/
+
+/*Bloc droit*/
+div.container-right {
+  width: 80%;
+}
+
+.container-right .icones {
+  /* positionning icones */
+  width: 40px;
+  /* float: left;
+  margin-right: 20px;*/
+}
+
+.container-right .flex-icone-titre {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.container-right h4 {
+  line-height: 40px;
+  margin-left: 15px;
+}
+
+div.b-right1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.b-right1 > div {
+  width: 50%;
+  padding: 15px 40px 40px 40px;
+  background-color: rgb(66, 66, 215);
+  margin: 0 0 0 30px;
+}
+
+.b-right1 p {
+  margin: 5px 0 0 0;
+}
+
+/* début bloc skills */
+.skills .flex-cercle {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.flex-cercle img {
+  width: 200px;
+}
+
+.flex-cercle div{
+  background: url(/image/cercle-illustrator.png);
+    background-size: cover;
+    height: 120px;
+    display: flex;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc {
+  padding: 15px 40px;
+  background-color: rgb(66, 66, 215);
+  margin: 30px 0 0 30px;
+}
+
+.bloc.skills {
+  height: 200px;
+}
+
+.competences h5 {
+  margin: 10px;
+}
+
+.competences > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.competences .progress-bar {
+  width: 900px;
+  height: 15px;
+}
+/* fin bloc skills */
+/*Fin bloc droit*/
